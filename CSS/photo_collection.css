@@ -4,7 +4,9 @@ body {
     background-image: url(/images/digital-camera.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-  background-size: cover;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
 }
 
 
@@ -28,5 +30,6 @@ body {
 
 .image-grid img {
     max-width: 100%;
-    height: auto;
+    height: 250px;
+    padding: 20px;
 }
