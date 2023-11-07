@@ -1,0 +1,22 @@
+/* styles.css */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the column width as needed */
+    gap: 10px; /* Adjust the gap between images */
+    padding: 20px; /* Adjust grid padding as needed */
+}
+
+.image-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.image-grid li {
+    display: block;
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+}
