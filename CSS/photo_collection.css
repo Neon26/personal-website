@@ -8,7 +8,14 @@ body {
     height: auto;
     max-width: 100%;
 }
-
+.center-div {
+    position: absolute;
+    /* Adjust top and left to center the div */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Your styles for the centered div */
+  }
 
 
 .image-grid {
@@ -32,4 +39,15 @@ body {
     max-width: 100%;
     height: 250px;
     padding: 20px;
+}
+
+button {
+    margin-top:30px;
+    float:left;
+    height:50px;
+}
+img {
+    float:left;
+    margin-right:10px;
+    margin-left:10px;
 }

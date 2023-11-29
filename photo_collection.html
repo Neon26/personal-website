@@ -56,32 +56,39 @@
     </div>
   </nav>
   <!-- Bootstrap navbar -->
-
-  <div class="container text-center">
-    <div class="row justify-content-start">
-      <div class="col-4">
-        <div class="image-grid">
-          <ul>
-              <li><img src="/images/Home.jpg" alt="Image 1"></li>
-              <li><img src="/images/lion.jpg" alt="Image 2"></li>
-              <li><img src="/images/lion_king.jpg" alt="Image 3"></li>
-              <!-- Add more images as needed -->
-          </ul>
-      </div>
-      </div>
-      <div class="col-4">
-        <div class="image-grid">
-          <ul>
-              <li><img src="/images/Home.jpg" alt="Image 1"></li>
-              <li><img src="/images/Home.jpg" alt="Image 2"></li>
-              <li><img src="/images/Home.jpg" alt="Image 3"></li>
-              <!-- Add more images as needed -->
-          </ul>
-      </div>
-      </div>
-    </div>
+  
+  <div class="center-div">
+    <button type="button" class="btn btn-success" onclick="prev()"> Prev </button>
+    <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg"  class="img-fluid" />
+    <button type="button" class="btn btn-success" onclick="next()"> Next </button>
   </div>
+  
 
+  
+    <script>
+      var images = [
+    'http://www.sololearn.com/uploads/slider/1.jpg', 
+    'http://www.sololearn.com/uploads/slider/2.jpg', 
+    'http://www.sololearn.com/uploads/slider/3.jpg'
+];
+var num = 0;
+function next() {
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+}
+function prev() {
+    var slider = document.getElementById('slider');
+    num--;
+    if(num < 0) {
+        num = images.length-1;
+    }
+    slider.src = images[num];
+}
+    </script>
 
 
 
